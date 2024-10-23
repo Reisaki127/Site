@@ -26,3 +26,14 @@ body{
     color: rgb(223, 223, 223);
     font-size: 30px;
 }
+
+.unput-field{
+    position: relative;
+}
+
+input-field input[type="email"],
+.input-field input[type="password"]{
+    border-radius: 10px;
+    background: transparent;
+
+}
