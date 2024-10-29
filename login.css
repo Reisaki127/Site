@@ -1,3 +1,13 @@
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.712);
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #fffffffd;
+}
+
 body{
     background: url(assets/photo/background_img.jpg) no-repeat;
     background-position: center;
@@ -27,13 +37,74 @@ body{
     font-size: 30px;
 }
 
-.unput-field{
+.form{
     position: relative;
 }
 
-input-field input[type="email"],
-.input-field input[type="password"]{
-    border-radius: 10px;
+.form input[type="email"],
+.form input[type="password"]{
+    border-radius: 8px;
     background: transparent;
+    width: 280px;
+    height: 30px;
+    border: 2px solid rgba(0, 0, 0, 0.712);
+    padding: 20px 40p 20px 20px;
+    backdrop-filter: blur(15px);
+    margin: 15px;
+}
 
+.form i{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: rgb(252, 252, 252);
+}
+
+input::placeholder{
+    color: rgb(88, 88, 88);
+}
+
+.form input[type="email"]:focus::placeholder,
+.form input[type="password"]:focus::placeholder{
+    transform: translateY(-200%);
+    transition: transform 0.2s ease-in-out;
+    font-size: 14px;
+}
+
+.form input[type="email"]:not(:focus)::placeholder,
+.form input[type="password"]:not(:focus)::placeholder{
+    transform: translateY(0%);
+    transition: transform 0.2s ease-in-out;
+    font-size: 14px;
+}
+
+a.forgot{
+    position: relative;
+}
+
+.wrapper .login{
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 45px;
+    width: 200px;
+    height: 30px;
+}
+
+.login:hover{
+    transition: all 0.2s ease-in-out;
+    background-color: rgb(100, 100, 100);
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    color:#fff;
+}
+
+.login:default{
+    transition: all 0.2s ease-in-out;
+}
+
+.text{
+    color:rgb(100, 100, 100);
 }
